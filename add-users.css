@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 70vh;
+    display:grid;
+    align-items:center;
+    justify-content: center;
+}
+.container{
+    background: rgb(0,0,0,0.7);
+    padding: 2em;
+    border-radius: 10px;
+    background: #23074d;
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);
+    background: linear-gradient(to right, #cc5333, #23074d);
+}
+form{
+    background: #FFFFFF;
+    padding: 2em;
+    border-radius: 10px;
+}

@@ -18,9 +18,12 @@
         <thead class="table-light">
             <tr>
             <th scope="col">Id</th>
-            <th scope="col">Name</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
             <th scope="col">E-mail</th>
             <th scope="col">Phone</th>
+            <th scope="col">city</th>
+            <th scope="col">gendre</th>
             <th scope="col">Action</th>
             </tr>
         </thead>
@@ -36,9 +39,12 @@
             ?>
                         <tr>
                             <th scope="row"><?php echo $row['id'] ?></th>
-                            <th scope="row"><?php echo $row['name'] ?></th>
+                            <th scope="row"><?php echo $row['firstName'] ?></th>
+                            <th scope="row"><?php echo $row['lastName'] ?></th>
                             <th scope="row"><?php echo $row['email'] ?></th>
                             <th scope="row"><?php echo $row['phone'] ?></th>
+                            <th scope="row"><?php echo $row['city'] ?></th>
+                            <th scope="row"><?php echo $row['gender'] ?></th>
                             <td>
                             <i style="margin-inline: .3em;" class="fa-regular fa-pen-to-square"></i>
                             <i style="margin-inline: .3em;" class="fa-solid fa-trash"></i>

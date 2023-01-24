@@ -6,6 +6,5 @@ $dbName = "loginSystem";
 
 $conn = mysqli_connect($serverName,$userName,$password,$dbName);
 if(!$conn){
-    die("failed connection" . mysqli_connect_error());
+    die("failed connection" . mysqli_connect_error($conn));
 }
-

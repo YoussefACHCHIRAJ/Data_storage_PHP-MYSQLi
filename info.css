@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    background: #666;
     padding-inline: 2em;
 }
 h1{
@@ -20,3 +19,4 @@ a{
 .table{
     width: 100%;
 }
+
