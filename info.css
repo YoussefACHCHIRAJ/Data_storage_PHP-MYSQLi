@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #666;
+    padding-inline: 2em;
+}
+h1{
+    text-align: center;
+    margin-block: 1em;
+    color: #fff;
+}
+a{
+    font-weight: 500;
+    margin: 1em;
+    cursor: pointer;
+}
+.table{
+    width: 100%;
+}
