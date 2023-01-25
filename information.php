@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrab -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="info.css">
+    <link rel="stylesheet" href="information.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>users information</title>
 </head>
 <body>
     <h1>information:</h1>
-    <a href="add_users.php" class="btn btn-dark">add user</a>
-    <table class="table table-dark table-border">
-        <thead class="table-light">
+    <a href="add_users.php" class="btn btn-primary">add user</a>
+    <table class="table table-dark table-border table-info">
+        <thead class=" table-active">
             <tr>
             <th scope="col">Id</th>
             <th scope="col">First name</th>

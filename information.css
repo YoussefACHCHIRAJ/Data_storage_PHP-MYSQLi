@@ -5,11 +5,12 @@
 }
 body{
     padding-inline: 2em;
+    background-color: rgb(225,225,225,0.2);
 }
 h1{
-    text-align: center;
     margin-block: 1em;
-    color: #fff;
+    color: #000;
+    text-decoration-line: underline;
 }
 a{
     font-weight: 500;
