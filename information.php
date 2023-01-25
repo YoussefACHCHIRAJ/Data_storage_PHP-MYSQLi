@@ -12,6 +12,24 @@
     <title>users information</title>
 </head>
 <body>
+    <?php
+        if(isset($_GET['msgAdd'])){
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">'
+                     . $_GET['msgAdd'] .
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>';
+        }else if(isset($_GET['msgUpdate'])){
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">'
+                     . $_GET['msgUpdate'] .
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>';
+        }else if(isset($_GET['msgDelete'])){
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">'
+                     . $_GET['msgDelete'] .
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>';
+        }
+    ?>
     <h1>information:</h1>
     <a href="add_users.php" class="btn btn-primary">add user</a>
     <table class="table table-dark table-border table-info">
@@ -46,8 +64,8 @@
                             <th scope="row"><?php echo $row['city'] ?></th>
                             <th scope="row"><?php echo $row['gender'] ?></th>
                             <td>
-                            <i style="margin-inline: .3em;" class="fa-regular fa-pen-to-square"></i>
-                            <i style="margin-inline: .3em;" class="fa-solid fa-trash"></i>
+                            <a href="update.php?id=<?php echo $row['id'] ?>"><i style="margin-inline: .3em;" class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="delete.php?id=<?php echo $row['id'] ?>"><i style="margin-inline: .3em;" class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
             <?php        
@@ -57,5 +75,6 @@
            
         </tbody>
     </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
